@@ -12,7 +12,7 @@ const Create = () => {
         const blog = {title , body , author};
         setIsPending(true)
 
-        fetch("http://localhost:8000/blogs" , {
+        fetch("https://sakethreddy18.github.io/jsonapi/Data/db.json" , {
             method: 'POST',
             headers: {"Content-type" : "application/json"},
             body: JSON.stringify(blog)
